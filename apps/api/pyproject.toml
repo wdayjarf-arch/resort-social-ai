@@ -1,0 +1,40 @@
+[project]
+name = "resort-social-api"
+version = "0.1.0"
+description = "Resort omnichannel social media and AI automation API foundation"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "uvicorn[standard]>=0.34,<1.0",
+  "pydantic>=2.10,<3.0",
+  "pydantic-settings>=2.7,<3.0",
+  "sqlalchemy>=2.0.36,<3.0",
+  "psycopg[binary]>=3.2,<4.0",
+  "alembic>=1.14,<2.0",
+  "celery[redis]>=5.4,<6.0",
+  "redis>=5.2,<6.0",
+  "cryptography>=44,<46",
+  "httpx>=0.28,<1.0",
+  "structlog>=24.4,<26",
+  "email-validator>=2.2,<3.0",
+  "PyJWT[crypto]>=2.10,<3.0",
+  "pwdlib[argon2]>=0.2,<1.0",
+  "python-multipart>=0.0.20,<1.0",
+  "pgvector>=0.3.6,<1.0"
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9.0",
+  "pytest-asyncio>=0.25,<2.0",
+  "httpx>=0.28,<1.0",
+  "ruff>=0.9,<1.0",
+  "mypy>=1.14,<2.0"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

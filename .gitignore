@@ -1,0 +1,36 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+node_modules/
+.next/
+.DS_Store
+backup-before-gemini-20261030-152332/
+meta-reliability-phase2/
+meta_reliability_patch/
+phase3_social_webhooks/
+phase3b_social_outbound/
+resort-social-ai-gemini-patch/
+wadi_jaref_knowledge_draft/
+
+knowledge.json
+
+# Backup files
+*.bak
+
+# Additional backup files
+*.backup
+*.before-*
+
+# Unused root-level frontend duplicate
+/page.tsx
